@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
