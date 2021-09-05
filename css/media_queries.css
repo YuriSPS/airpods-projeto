@@ -3,7 +3,7 @@ header {
 }
 
 .box {
-  padding: 120px 0;
+  padding: 180px 0;
 }
 
 .row {
@@ -98,6 +98,11 @@ header {
 
   .home-img img:nth-child(1) {
     transform: translate3d(0, -30px, 0);
+    animation: airpod1 5s ease-in-out infinite;
+  }
+
+  .home-img img:nth-child(2) {
+    animation: airpod2 5s ease-in-out infinite;
   }
 
   .home-scroll {
@@ -112,10 +117,15 @@ header {
     font-size: 0.75em;
   }
 
+  .home-scroll-btn img {
+    width: 30px;
+  }
+
   .home-scroll-btn {
     position: absolute;
     top: 30px;
     left: 36px;
+    animation: slideUpAndDown 4s ease-in-out infinite;
   }
 
   /* Section Details */
@@ -130,6 +140,7 @@ header {
 
   .airpods {
     width: 218px;
+    animation: airpodsUpAndDown 4s ease-in-out infinite;
   }
 
   .details-initial {
