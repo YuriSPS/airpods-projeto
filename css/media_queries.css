@@ -1,0 +1,161 @@
+header {
+  height: 5vh;
+}
+
+.box {
+  padding: 180px 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* CSS Smartphones */
+@media (max-width: 400px) {
+  .container {
+    max-width: 340px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  /* Nav */
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0;
+  }
+
+  .nav-logo {
+    font-size: 1em;
+    color: #1d1d1f;
+    font-weight: 700;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-actions img {
+    width: 28px;
+    margin-right: 15px;
+  }
+
+  .nav-btn {
+    padding: 6px 16px;
+    background: #0071e3;
+    color: #fff;
+    border-radius: 32px;
+  }
+
+  /* Section Home */
+  #home {
+    height: 95vh;
+    padding-top: 60px;
+    position: relative;
+  }
+
+  .home-title {
+    width: 100%;
+    text-align: center;
+    font-size: 3.7em;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  .home-description {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .home-img {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-img img {
+    width: 80px;
+    margin-right: 10px;
+  }
+
+  .home-img img:nth-child(1) {
+    transform: translate3d(0, -30px, 0);
+    animation: airpod1 5s ease-in-out infinite;
+  }
+
+  .home-img img:nth-child(2) {
+    animation: airpod2 5s ease-in-out infinite;
+  }
+
+  .home-scroll {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .home-scroll-text {
+    display: block;
+    font-size: 0.75em;
+  }
+
+  .home-scroll-btn img {
+    width: 30px;
+  }
+
+  .home-scroll-btn {
+    position: absolute;
+    top: 30px;
+    left: 36px;
+    animation: slideUpAndDown 4s ease-in-out infinite;
+  }
+
+  /* Section Details */
+  .details-box {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .details-img {
+    justify-content: center;
+  }
+
+  .airpods {
+    width: 218px;
+    animation: airpodsUpAndDown 4s ease-in-out infinite;
+  }
+
+  .details-initial {
+    font-size: 12px;
+    color: #1d1d1f;
+  }
+
+  .details-title {
+    font-size: 36px;
+    font-weight: 400;
+    color: #1d1d1f;
+  }
+
+  .details-description {
+    font-size: 12px;
+    color: #1d1d1f;
+  }
+}
