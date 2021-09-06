@@ -20,7 +20,7 @@ header {
 }
 
 /* CSS Smartphones */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .container {
     max-width: 340px;
     margin: 0 auto;
