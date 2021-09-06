@@ -46,6 +46,41 @@ header {
     display: none;
   }
 
+  .nav-list li {
+    padding: 10px 0;
+  }
+
+  .nav-list a {
+    color: #fff;
+  }
+
+  .nav-list.active-toggle {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: #1d1d1f;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: showMenuToggle 0.7s forwards;
+  }
+
+  .btn-close-toggle {
+    filter: invert(1%);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .btn-close-toggle img {
+    width: 15px;
+  }
+
   .nav-actions {
     display: flex;
     justify-content: center;
@@ -107,15 +142,18 @@ header {
   }
 
   .home-scroll {
-    position: absolute;
+    /* position: absolute;
     bottom: 120px;
     left: 50%;
-    transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0); */
+    justify-content: center;
+    margin-top: 120px;
   }
 
   .home-scroll-text {
     display: block;
     font-size: 0.75em;
+    margin-top: -30px;
   }
 
   .home-scroll-btn img {
@@ -123,9 +161,10 @@ header {
   }
 
   .home-scroll-btn {
-    position: absolute;
+    /* position: absolute;
     top: 30px;
-    left: 36px;
+    left: 36px; */
+    justify-content: center;
     animation: slideUpAndDown 4s ease-in-out infinite;
   }
 

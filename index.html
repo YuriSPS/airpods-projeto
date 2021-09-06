@@ -18,13 +18,18 @@
                 <a href="#" class="nav-logo">AirPods</a>
 
                 <!-- Nav List -->
-                <!-- <ul class="nav-list">
-                    <li><a href="#"></a></li>
-                </ul> -->
+                <ul class="nav-list">
+                    <li><a href="#">Description</a></li>
+                    <li><a href="#">Spec</a></li>
+                    <!-- Btn Close -->
+                    <a href="#" class="btn-close-toggle">
+                        <img src="./img/close.png" alt="">
+                    </a>
+                </ul> 
 
                 <!-- Menu Toggle -->
                 <div class="nav-actions">
-                    <a href="#"><img src="./icons/bx-chevron-down.svg" alt=""></a>
+                    <a href="#"><img src="./icons/bx-chevron-down.svg" class="btn-toggle" alt=""></a>
                     <a href="#" class="nav-btn">Comprar</a>
                 </div>
             </nav>
@@ -44,11 +49,13 @@
                 <img src="./img/airpod1.png" alt="">
                 <img src="./img/airpod2.png" alt="">
             </div>
-            <div class="home-scroll">
+            <div class="home-scroll row">
                 <span class="home-scroll-text">Scroll down for more</span>
-                <a href="#details" class="home-scroll-btn">
-                    <img src="./icons/bx-mouse.svg" alt="">
-                </a>
+                <div class="row home-scroll-btn">
+                    <a href="#details" class="home-scroll-btn">
+                        <img src="./icons/bx-mouse.svg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -82,6 +89,6 @@
         </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
