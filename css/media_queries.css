@@ -121,13 +121,13 @@ header {
   }
 
   .home-img {
-    padding-top: 130px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
   }
 
   .home-img img {
-    width: 100px;
+    width: 80px;
     height: auto;
     margin-right: 10px;
   }
@@ -142,10 +142,10 @@ header {
   }
 
   .home-scroll {
-    /* position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translate3d(-50px, 0, 0); */
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
     justify-content: center;
     margin-top: 100px;
   }
@@ -197,5 +197,14 @@ header {
   .details-description {
     font-size: 12px;
     color: #1d1d1f;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    max-width: 300px;
+  }
+  .home-img img {
+    width: 60px;
   }
 }
